@@ -17,7 +17,9 @@
 		<label key="webitem-test.menu.label.webitem" />
 		<link linkId="google_home">http://google.com</link>
 
-		<condition class="com.atlassian.jira.plugin.webfragment.conditions.UserIsProjectAdminCondition"/>
+		<condition class="com.atlassian.jira.plugin.webfragment.conditions.JiraGlobalPermissionCondition">
+    		<param name="permission">admin</param>
+		</condition>
 	</web-item>
 
 </atlassian-plugin>
